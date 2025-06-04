@@ -6,7 +6,7 @@ LIMITS_FILE = "limits.json"
 PREMIUM_FILE = "premium.json"
 
 
-ADMIN_ID = {665620781  }
+ADMIN_ID = {YOU TELEGRAM ID }
 
 if os.path.exists(LIMITS_FILE):
     with open(LIMITS_FILE, "r") as f:
