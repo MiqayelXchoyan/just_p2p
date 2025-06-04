@@ -13,10 +13,10 @@ from parser7amd import get_bingx_amd
 
 from limits import can_access, is_premium, add_premium, remove_premium
 
-bot = TeleBot(token="7941822557:AAF2mPCJ67xZt0XuldIOAywc9sWhVYA8J84")
+bot = TeleBot(token="YOUR TELEGRAM BOT TOKEN")
 
-ADMIN_USERNAME = "@miiq04"
-ADMIN_ID = 665620781
+ADMIN_USERNAME = "@username"
+ADMIN_ID = 12345678
 
 def gen_markup():
     markup = InlineKeyboardMarkup(row_width=2)
@@ -37,9 +37,9 @@ def back_markup():
 def wallet_markup():
     markup = InlineKeyboardMarkup(row_width=1)
     markup.add(
-        InlineKeyboardButton("💵 Оплатить через TON Wallet", url="https://tonviewer.com/UQDIQY9KYNK2_pkNMCsZHchgYmeHtGvp_lAlYsxeCqGb-6gv"),
-        InlineKeyboardButton("💸 Оплатить через ЮMoney (4100119158914898)", url="https://yoomoney.ru/to/4100119158914898"),
-        InlineKeyboardButton("💶 Оплатить через Idram (886226199)", url="https://idram.am")
+        InlineKeyboardButton("💵 Оплатить через TON Wallet", url="TON WALLET URL"),
+        InlineKeyboardButton("💸 Оплатить через ЮMoney (4100119158914898)", url="ЮMoney URL"),
+        InlineKeyboardButton("💶 Оплатить через Idram (886226199)", url="IDRAM ID")
     )
     markup.add(InlineKeyboardButton("🔙 Назад", callback_data="back"))
     return markup
